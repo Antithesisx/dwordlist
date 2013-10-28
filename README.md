@@ -18,4 +18,4 @@ Autocomplete for X11.
 sudo cp dwordlist /usr/bin/
 sudo chmod +x /usr/bin/dwordlist
 ```
-
+- bind some key to the dwordlist command (I personally use alt+enter). xbindkeys is recommended. If you're using a desktop environment, it probably provides a feature for this already. Look in your DE's settings.
