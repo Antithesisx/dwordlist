@@ -12,6 +12,10 @@ Autocomplete for X11.
 - Resolve dependencies. On Debian, this means:
 
 `sudo apt-get install dmenu xautomation`
-- place dwordlist in your PATH;
-- make sure it's executable.
+- place dwordlist in your PATH and make sure it's executable.
+
+```
+sudo cp dwordlist /usr/bin/
+sudo chmod +x /usr/bin/dwordlist
+```
 
