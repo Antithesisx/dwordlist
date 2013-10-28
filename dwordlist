@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Welcome to dwordlist, the dmenu-based autocomplete tool for GNU/Linux.
+#
+# Dependencies:
+# - dmenu
+# - xte from the xautomation metapackage
+#
+# Installation:
+# - Place the script somewhere in your PATH, with dwordlist as the name, and make sure it's executable. It's very important that you run it from your PATH, or it can't repeat itself.
+#
+
+date=$(date +"%a %d. %b %R")
+selection=$(cat /usr/share/dict/words | dmenu -b -p "$date")
+
+if [[ -z $selection ]]
+	then exit
+	else
+		xte "str $selection "
+		dwordlist
+fi
